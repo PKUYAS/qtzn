@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+# 青天指南（第八版）
 
-You can use the [editor on GitHub](https://github.com/PKUYAS/qtzn/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## 简介
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+《青天指南》是北京大学青年天文学会（学生社团）编写的一本天文知识入门读物，目前已更新至第八版。
 
-### Markdown
+本版《青天指南》电子版在线阅读和下载链接：https://pkuyas.github.io/qtzn/web/viewer.html
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 第八版序言
 
-```markdown
-Syntax highlighted code block
+您现在阅读的这本《青天指南》是初创以来的第八版。
 
-# Header 1
-## Header 2
-### Header 3
+自第七版修订完成以来，《青天指南》得到了青年天文学会同学们的大力支持，它在为新会员普及基础天文知识等方面做出了巨大贡献，并一度成为会内培训所使用的教材。五年来，一届又一届的新会员读着《青天指南》，成为了新骨干、新任主席团，将社团的接力棒代代相传，将天文知识带给越来越多的北大同学。《青天指南》无疑在青年天文学会发展史上写下了浓墨重彩的一笔。
 
-- Bulleted
-- List
+但是，第七版在版式、页码等方面存在一些不符合书籍规范的小问题，部分内容也已经过时。同时，由于保管不慎，其Word源文件已经灭失，导致学会无法对其内容进行调整。于是我们决定重新编写新一版的《青天指南》。
 
-1. Numbered
-2. List
+《青天指南》第八版保留了第七版的框架，但内容有较大变化：
 
-**Bold** and _Italic_ and `Code` text
+- 使用 LaTeX  引擎进行排版，对部分版式进行了修改，使版面更为美观，同时也方便后人进行修改；
+- 增加了《时间、历法与星空文化》《恒星》《太空探索》等章节，并重写了其他章节；
+- 重新绘制了第七版《青天指南》中部分不清晰的插图，并增加了许多必要的新插图；
+- 在每章最后增加了补充阅读材料，供对相关内容有兴趣的读者参考。由于成本限制，补充阅读仅在电子版《青天指南》中提供，纸质版中不再印出。
 
-[Link](url) and ![Image](src)
-```
+本版《青天指南》兼顾理论知识和观测实践，更加全面、系统；通过“正文+补充阅读”的形式兼顾不同水平读者的需求；同时，我们采用了专业的 LaTeX 排版引擎进行排版，图片清晰、版面美观，力求达到出版效果。希望本次修订能够解决《青天指南》第七版的诸多不足，为向全校同学乃至全国人民普及天文知识贡献一点绵薄之力。
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PKUYAS/qtzn/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
