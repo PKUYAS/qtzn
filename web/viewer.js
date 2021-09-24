@@ -3748,7 +3748,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   defaultUrl: {
-    value: "青天指南第八版（预览版）.pdf",
+    value: "青天指南第八版.pdf",
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {
