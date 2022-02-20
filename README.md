@@ -4,7 +4,12 @@
 
 《青天指南》是北京大学青年天文学会（学生社团）编写的一本天文知识入门读物，目前已更新至第八版。
 
-本版《青天指南》电子版在线阅读和下载链接：[https://pkuyas.github.io/qtzn/web/viewer.html](https://pkuyas.github.io/qtzn/web/viewer.html)
+本版《青天指南》电子版在线阅读和下载链接：
+
+[https://pkuyas.github.io/qtzn/web/viewer.html](https://pkuyas.github.io/qtzn/web/viewer.html) 
+
+[https://pkuyas.gitee.io/qtzn/web/viewer.html](https://pkuyas.gitee.io/qtzn/web/viewer.html)
+
 
 ## 第八版序言
 
