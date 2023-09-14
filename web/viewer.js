@@ -797,7 +797,7 @@ const PDFViewerApplication = {
     }
 
     this.setTitle(title);
-    this.setTitle('《青天指南》第八版在线阅读')
+    this.setTitle('《青天指南》第九版在线阅读')
   },
 
   setTitle(title) {
@@ -3748,7 +3748,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   defaultUrl: {
-    value: "青天指南第八版.pdf",
+    value: "青天指南第九版.pdf",
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {
