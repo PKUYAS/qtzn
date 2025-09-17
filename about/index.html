@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>青天指南 · 关于</title>
+    <link rel="icon" href="../yas_256x256.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light dark;
+            --md-primary: #307599;
+            --md-primary-dark: #24576f;
+            --md-secondary: #ff9800;
+            --md-surface: #ffffff;
+            --md-background: #f4f7f9;
+            --md-text-primary: #1f1f1f;
+            --md-text-secondary: #555555;
+            --md-divider: rgba(0, 0, 0, 0.12);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --md-surface: #1f2933;
+                --md-background: #121a21;
+                --md-text-primary: #e0e6ed;
+                --md-text-secondary: #a7b4c3;
+                --md-divider: rgba(255, 255, 255, 0.12);
+                --md-secondary: #ffb655;
+            }
+
+            body {
+                background: var(--md-background);
+                color: var(--md-text-primary);
+            }
+
+            .app-bar {
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+            }
+
+            .page {
+                color: var(--md-text-primary);
+            }
+
+            .hero {
+                box-shadow: 0 16px 36px rgba(7, 32, 44, 0.65);
+            }
+
+            .card {
+                background: var(--md-surface);
+                box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
+            }
+
+            footer {
+                color: var(--md-text-secondary);
+            }
+
+            footer a {
+                color: var(--md-secondary);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            font-family: 'Roboto', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--md-background);
+            color: var(--md-text-primary);
+            line-height: 1.6;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .app-bar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: var(--md-primary);
+            color: #fff;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-bar__title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .nav {
+            display: flex;
+            gap: 16px;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        .nav a[aria-current="page"]::after,
+        .nav a:hover::after,
+        .nav a:focus-visible::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+        }
+
+        .page {
+            flex: 1;
+            padding: 24px 16px 48px;
+            max-width: 960px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(48, 117, 153, 0.18), rgba(48, 117, 153, 0.32));
+            border-radius: 24px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 16px 36px rgba(48, 117, 153, 0.2);
+        }
+
+        .hero h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            margin-bottom: 0;
+            color: var(--md-text-secondary);
+        }
+
+        .section-title {
+            margin: 48px 0 16px;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--md-primary-dark);
+        }
+
+        .card {
+            background: var(--md-surface);
+            border-radius: 24px;
+            padding: 32px;
+            margin-bottom: 20px;
+            box-shadow: 0 12px 24px rgba(48, 117, 153, 0.18);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .card h3 {
+            margin-top: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .supporting-text {
+            color: var(--md-text-secondary);
+        }
+
+        footer {
+            padding: 24px 16px 32px;
+            text-align: center;
+            color: var(--md-text-secondary);
+        }
+
+        footer a {
+            color: var(--md-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 720px) {
+            .app-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .hero {
+                padding: 24px;
+            }
+
+            .card {
+                padding: 24px;
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="app-bar">
+        <div class="app-bar__title">青天指南</div>
+        <nav class="nav" aria-label="主要导航">
+            <a href="./index.html" aria-current="page">关于</a>
+            <a href="./purchase.html">购买</a>
+        </nav>
+    </header>
+    <main class="page">
+        <section class="hero">
+            <h1>走近《青天指南》</h1>
+            <p>《青天指南》是北京大学青年天文学会编写的天文知识入门读物，旨在帮助更多读者开启对星空的探索。</p>
+        </section>
+
+        <h2 class="section-title">关于本书</h2>
+        <section class="card">
+            <h2>简介</h2>
+            <p>《青天指南》是北京大学青年天文学会（学生社团）编写的一本天文知识入门读物，目前已更新至第九版。</p>
+            <p>本版《青天指南》电子版在线阅读和下载链接：</p>
+            <p><a href="https://pkuyas.github.io/qtzn/web/viewer.html" target="_blank" rel="noopener">https://pkuyas.github.io/qtzn/web/viewer.html</a></p>
+            <p><a href="https://pkuyas.gitee.io/qtzn/web/viewer.html" target="_blank" rel="noopener">https://pkuyas.gitee.io/qtzn/web/viewer.html</a></p>
+        </section>
+
+        <section class="card">
+            <h2>第八版序言</h2>
+            <p>您现在阅读的这本《青天指南》是初创以来的第八版。</p>
+            <p>自第七版修订完成以来，《青天指南》得到了青年天文学会同学们的大力支持，它在为新会员普及基础天文知识等方面做出了巨大贡献，并一度成为会内培训所使用的教材。五年来，一届又一届的新会员读着《青天指南》，成长为社团的中坚力量，将社团的接力棒代代相传，将天文知识带给越来越多的北大同学。《青天指南》无疑在青年天文学会发展史上写下了浓墨重彩的一笔。</p>
+            <p>但是，第七版在版式、页码等方面存在一些不符合书籍规范的小问题，部分内容也已经过时。同时，由于保管不慎，其 Word 源文件已经灭失，导致学会无法对其内容进行调整。于是我们决定重新编写新一版的《青天指南》。</p>
+            <p>《青天指南》第八版保留了第七版的框架，但内容有较大变化：</p>
+            <ul>
+                <li>使用 LaTeX 引擎进行排版，对部分版式进行了修改，使版面更为美观，同时也方便后人进行修改；</li>
+                <li>增加了《时间、历法与星空文化》《恒星》《太空探索》等章节，并重写了其他章节；同时重新绘制了第七版《青天指南》中部分不清晰的插图，并增加了许多必要的新插图；</li>
+                <li>在每章最后增加了补充阅读材料，供对相关内容有兴趣的读者参考。由于成本限制，补充阅读仅在电子版《青天指南》中提供，纸质版中不再印出。</li>
+            </ul>
+            <p>本版《青天指南》兼顾理论知识和观测实践，更加全面、系统；通过“正文+补充阅读”的形式兼顾不同水平读者的需求；同时，我们采用了专业的 LaTeX 排版引擎进行排版，图片清晰、版面美观，力求达到出版效果。电子版中使用了 <code>hyperref</code> 宏包，让 PDF 文件特别适合在电子设备上阅读，读者可以通过目录、交叉引用等快速跳转到想要阅读的章节。希望本次修订能够解决《青天指南》第七版的诸多不足，为向全校同学乃至全国人民普及天文知识贡献一点绵薄之力。</p>
+            <p>本版《青天指南》编写的主要目的是分享知识。因此，在著作权上，依照 Creative Commons 版权协议，我们希望您在使用本《青天指南》时，能够做到署名（BY）、非商业用途（NC）和相同方式共享（SA）。同时，由于编写者水平仍然有限，《青天指南》中难免有疏漏、谬误，读者可以发送邮件至 <a href="mailto:pkuyas@126.com">pkuyas@126.com</a> 向我们提出意见，我们真诚地对每一位读者的来信表示衷心的感谢。</p>
+        </section>
+
+        <section class="card">
+            <h2>第九版修订说明</h2>
+            <p>2023 年暑假期间，青年天文学会组织对《青天指南》进行了第九版修订。第九版继承了第八版的主要内容，改善了第八版存在的问题，旨在为广大天文爱好者提供一本更加优秀的中文天文科普读物。</p>
+            <p>在投入服务后，《青天指南》第八版受到了广大读者的好评，同时我们也收到了不少建议，暴露出本书的部分缺点。我们考察市面上主流的中文天文科普读物，取其长补己短，革其故鼎己新，力求使《青天指南》全书结构更加合理，科普逻辑更加清晰。</p>
+            <p>在第九版中，我们重构了第一章《星空导览》，以期实现提纲絜领、深入浅出的效果，帮助读者快速建立对天文学的基本认知。具体而言，我们调整了《星空导览》中各小节的顺序；将难度较高的天球坐标系内容独立成章，是为第二章《天球与天球坐标系》；将关于月相的内容调整至《太阳系》一章；调整《时间、历法与星空文化》一章的位置，将星空文化等内容提前至《星空导览》一章。</p>
+            <p>除此之外，本次修订还涉及以下内容：更新《资源》一章；在《天文望远镜》一章增加世界著名望远镜简介一节；优化《太空探索》《关于青年天文学会》等章节的行文风格并更新时效性内容；统一强调样式、外文名词与人名样式；修正部分章节内容的错误；修改错字和病句等等。</p>
+            <p>共有 7 位青天会骨干参与了《青天指南》第九版的修订工作，19 位骨干参与了审校工作。孙宇辰、李子凡参与了第一章《星空导览》和第二章《天球与天球坐标系》的修订，林熠伟参与了第三章《天文望远镜》和第十章《资源》的修订，郑宇涵参与了第三章《天文望远镜》的修订，刘韫滕参与了第四章《太阳系》的修订，陈泽晖参与了第五章《时间与历法》的修订，杜骏豪参与了第九章《太空探索》和第十一章《青年天文学会简介》的修订。王其钲、王梓丁、方思仪、方振林、龙炫宇、刘兵、刘韫滕、孙宇辰、杜骏豪、李子凡、李家瑞、李想、杨嘉昊、陈泽晖、林熠伟、周钜宸、赵鑫淼、郭京松、韩佳恒完成了本书的审校工作。同时，陈泽晖、刘韫滕完成了主要的排版工作。在这里向他们表示感谢。</p>
+            <p>我们希望将《青天指南》创作成为一流的中文天文科普读物，诚然水平有限，我们非常欢迎读者对本书提出宝贵的意见和建议，以帮助我们不断改进和完善本书的内容与质量。如果您在阅读本书的过程中发现了任何错误、疑问或者有任何想法和建议，请您通过以下方式联系我们：发送电子邮件到 <a href="mailto:pkuyas@126.com">pkuyas@126.com</a>，或在官方微信公众号“北大青年天文学会”私信我们。</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="../index.html">返回主页</a>
+    </footer>
+</body>
+</html>
