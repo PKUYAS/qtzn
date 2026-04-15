@@ -1,17 +1,170 @@
-<html>
-    <head>
-        <meta charset="utf-8"> 
-        <title>青天指南</title>
-        <link rel="icon" href="./yas_256x256.png">
-    </head>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>青天指南</title>
+    <meta name="description" content="《青天指南》第九版官网，提供内容介绍、关于页面、购买方式与在线阅读入口。">
+    <link rel="icon" href="./yas_256x256.png">
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="brand" href="./index.html">青天指南</a>
+            <nav class="site-nav site-nav--desktop" aria-label="主要导航">
+                <a href="./index.html" aria-current="page">首页</a>
+                <a href="./about/">关于</a>
+                <a href="./about/purchase.html">购买</a>
+                <a href="./web/viewer.html">在线阅读</a>
+            </nav>
+            <details class="mobile-nav">
+                <summary class="mobile-nav__button" aria-label="打开导航菜单">
+                    <span class="mobile-nav__icon"><span></span></span>
+                </summary>
+                <nav class="mobile-nav__panel" aria-label="移动端导航">
+                    <a href="./index.html" aria-current="page">首页</a>
+                    <a href="./about/">关于</a>
+                    <a href="./about/purchase.html">购买</a>
+                    <a href="./web/viewer.html">在线阅读</a>
+                </nav>
+            </details>
+        </div>
+    </header>
 
-    <body>  
-    <img src="./media/advertisement.jpg" alt"advertisement" usemap="#links"/>
-    <map name="links">
-        <area shape = "rect" coords="335, 2035, 535, 2085" href="./about" alt="About"/>
-        <area shape = "rect" coords="615, 2035, 735, 2085" href="./web/purchase.html" alt="Purchase"/>
-        <area shape = "rect" coords="300, 10300, 500, 10350" href="./about" alt="About"/>
-        <area shape = "rect" coords="600, 10300, 720, 10350" href="./web/purchase.html" alt="Purchase"/>
-    </map>
-    </body>  
-</html>  
+    <main>
+        <section class="section section--dark">
+            <div class="section-inner hero-grid">
+                <div>
+                    <p class="eyebrow">第九版</p>
+                    <h1 class="hero-title">青天指南<sup class="footnote-mark">1</sup>，强得很。</h1>
+                    <p class="hero-copy">你的下一款天文教材，何必是教材。</p>
+                    <ul class="price-list" aria-label="领取与购买信息">
+                        <li class="price-item"><strong>免费领取</strong> | 新会员</li>
+                        <li class="price-item"><strong>25 RMB</strong> | 第二本与非会员<sup class="footnote-mark">2</sup></li>
+                        <li class="price-item"><strong>在线阅读</strong> | 随时打开 PDF</li>
+                    </ul>
+                    <div class="action-row">
+                        <a class="button" href="./web/viewer.html">在线阅读</a>
+                        <a class="button button--secondary" href="./about/">进一步了解</a>
+                        <a class="button button--secondary" href="./about/purchase.html">购买纸质版</a>
+                    </div>
+                </div>
+                <figure class="media-frame">
+                    <img class="hero-art" src="./pic/cover.png" alt="《青天指南》第九版封面">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section--light">
+            <div class="section-inner split">
+                <figure class="image-card">
+                    <img src="./pic/sun.png" alt="太阳图像与《青天指南》章节展示" loading="lazy">
+                </figure>
+                <div>
+                    <p class="section-kicker">新版修订</p>
+                    <h2 class="section-title">焕然一新，<br>如日方升。</h2>
+                    <p class="section-copy">修订《星空导览》《深空天体》《资源》三章，重新编写《天文望远镜》《太阳系》《特殊天象》《青年天文学会简介》四章，新增《时间、历法和星空文化》《恒星》《太空探索》三章。纷繁奇妙，待您探索。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--dark">
+            <div class="section-inner split split--reverse">
+                <div>
+                    <p class="section-kicker">专业排版</p>
+                    <h2 class="section-title">LaTeX 引擎，<br>动力澎湃。</h2>
+                    <p class="section-copy">采用专业的 LaTeX 排版引擎进行排版，图片清晰、版面美观，力求达到出版效果。电子版中使用了 <code>hyperref</code> 宏包，让 PDF 文件特别适合在电子设备上阅读。</p>
+                </div>
+                <figure class="image-card image-card--dark">
+                    <img src="./pic/power.png" alt="LaTeX 排版与望远镜示意图" loading="lazy">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section--white">
+            <div class="section-inner">
+                <p class="section-kicker">视觉升级</p>
+                <h2 class="section-title">甄选图片，<br>尽态极妍。</h2>
+                <p class="lead">全书精选 213 张天文学照片与插图，对第七版不清晰的插图进行替换，部分插图甚至进行了矢量化，尽享宇宙浩瀚与星河烂漫。</p>
+                <div class="image-grid" style="margin-top: 32px;">
+                    <figure class="image-card">
+                        <img src="./pic/selectedPic1.png" alt="《青天指南》精选天文插图一" loading="lazy">
+                    </figure>
+                    <figure class="image-card">
+                        <img src="./pic/selectedPic2.png" alt="《青天指南》精选天文插图二" loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--dark">
+            <div class="section-inner split">
+                <figure class="image-card image-card--dark">
+                    <img src="./pic/shenzhou12.png" alt="中国航天相关图片" loading="lazy">
+                </figure>
+                <div>
+                    <p class="section-kicker">内容更新</p>
+                    <h2 class="section-title">包罗万象，<br>推陈出新。</h2>
+                    <p class="section-copy">与第七版相比，现版本删除了已经过时的天文学知识与信息，对标天文学前沿领域，包揽国内外最新消息。万象更新，期待您的品鉴。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light">
+            <div class="section-inner split split--reverse">
+                <div>
+                    <p class="section-kicker">装帧用纸</p>
+                    <h2 class="section-title">道林纸张，<br>匠心甄选。</h2>
+                    <p class="section-copy">精选 80g 米黄色道林纸，对比度、伸缩率和表面强度有较高的提升，酸碱性也应接近中性或呈弱碱性。米黄色的纸张映衬出柔和的质感，阅读起来更加护眼。</p>
+                </div>
+                <figure class="image-card">
+                    <img src="./pic/daolin.png" alt="《青天指南》纸张细节展示" loading="lazy">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section--dark">
+            <div class="section-inner split">
+                <figure class="image-card image-card--dark">
+                    <img src="./pic/historicqtzn.png" alt="《青天指南》历代版本展示" loading="lazy">
+                </figure>
+                <div>
+                    <p class="section-kicker">版本传承</p>
+                    <h2 class="section-title">涛声依旧，<br>一脉相传。</h2>
+                    <p class="section-copy">1990 年 4 月 25 日，哈勃空间望远镜升空翌日，学会初创。2012 年 9 月，《青天指南》第一版诞生。学会三十余年筚路蓝缕，指南近十年薪火相传。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--white">
+            <div class="section-inner section-inner--narrow">
+                <div class="cta-panel">
+                    <div>
+                        <p class="section-kicker">最后一页，也是开始</p>
+                        <h2 class="section-title">把星空带回去。</h2>
+                        <p class="section-copy">无论你想先在线翻阅，还是直接购买纸质版，《青天指南》都已经准备好陪你从抬头看天开始，走到真正理解天文学。</p>
+                        <div class="action-row">
+                            <a class="button" href="./web/viewer.html">打开在线阅读</a>
+                            <a class="button button--secondary" href="./about/purchase.html">查看购买方式</a>
+                        </div>
+                        <div class="footnotes">
+                            <p class="footnote">1. 出于环保原因，补充阅读不再印出。</p>
+                            <p class="footnote">2. 老版本《青天指南》不参与换购，不包括运费。</p>
+                        </div>
+                    </div>
+                    <figure class="media-frame">
+                        <img class="hero-art" src="./pic/qtznv8.png" alt="《青天指南》第九版实体书" loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            《青天指南》第九版 · 北京大学青年天文学会 · <a href="./about/">关于本书</a> · <a href="./about/purchase.html">购买</a> · <a href="./web/viewer.html">在线阅读</a>
+        </div>
+    </footer>
+</body>
+</html>
