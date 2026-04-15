@@ -397,15 +397,26 @@ main {
 }
 
 .media-frame {
+    width: min(100%, 420px);
+    margin-inline: auto;
+    justify-self: center;
+    padding: 14px;
     border-radius: var(--radius-card);
     overflow: hidden;
-    background: transparent;
+    background: var(--color-gray);
+    box-shadow: var(--shadow-card);
+}
+
+.section--dark .media-frame {
+    background: #272729;
 }
 
 .hero-art {
-    max-width: 420px;
-    margin-inline: auto;
-    filter: drop-shadow(0 32px 56px rgba(0, 0, 0, 0.36));
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 18px;
+    filter: none;
 }
 
 .image-card {
@@ -758,6 +769,11 @@ tr:last-child td {
 
     .image-grid {
         grid-template-columns: 1fr;
+    }
+
+    .media-frame {
+        width: min(100%, 320px);
+        padding: 12px;
     }
 
     table,
